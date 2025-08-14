@@ -1,16 +1,47 @@
-# enade_app
+# Project Title: ENADE App
 
-A new Flutter project.
+## Description
+The ENADE App is a web application designed to facilitate the management and analysis of ENADE (National Student Performance Exam) data. This application provides features for data entry, analysis, and reporting.
 
-## Getting Started
+## Prerequisites
+- Docker
+- Docker Compose
+- Node.js (for local development)
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd enade_app
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+2. Build the Docker image:
+   ```
+   docker-compose build
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Start the application:
+   ```
+   docker-compose up
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
+Once the application is running, you can access it at `http://localhost:3000` (or the port specified in your `docker-compose.yml`).
+
+## File Structure
+```
+enade_app
+├── src
+│   └── app.ts          # Main application logic
+├── Dockerfile           # Dockerfile for building the application image
+├── docker-compose.yml   # Docker Compose configuration
+├── package.json         # npm configuration and dependencies
+├── tsconfig.json        # TypeScript configuration
+└── README.md            # Project documentation
+```
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
